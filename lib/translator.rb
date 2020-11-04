@@ -7,7 +7,7 @@ def load_library(path)
 library = YAML.load_file(path)
 final_library = {}
 library.each do |key, value|
-  final_library[key] = {}
+  final_library[key] = {:english=> value[0], :japanese=> value[1]}
 end 
 binding.pry
 end
