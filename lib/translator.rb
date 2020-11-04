@@ -7,7 +7,7 @@ def load_library(path)
 library = YAML.load_file(path)
 final_library =  library.each_with_object({}) do |(key, value), final_library|
     value.each do |array_of_emot|
-      final_library.merge!(key: {english => array_of_emot[0], japanese=> array_of_emot[1]})
+      final_library.merge!(key=> {english => array_of_emot[0], japanese=> array_of_emot[1]})
     binding.pry
     end 
  end 
