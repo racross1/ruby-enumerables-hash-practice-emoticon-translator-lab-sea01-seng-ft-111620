@@ -11,7 +11,7 @@ final_library =  library.each_with_object({}) do |(key, value), final_library|
     end 
     final_library = key: inner_hash
   end 
-      
+end    
 binding.pry
 end
 
