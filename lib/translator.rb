@@ -4,7 +4,7 @@ require 'pry'
 
 
 def load_library
-  
+  library = 
 end
 
 def get_japanese_emoticon
