@@ -8,6 +8,7 @@ library = YAML.load_file(path)
 final_libary = {}
 library.each do |key, value|
   final_libary.merge(key: {})
+end 
 binding.pry
 end
 
