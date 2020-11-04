@@ -9,16 +9,9 @@ final_library =  library.each_with_object({}) do |(key, value), final_library|
     value.each do |array_of_emot|
       inner_hash = {english: array_of_emot[0], japanese: array_of_emot[1]}
     end 
-    
+    final_library = key: inner_hash
+  end 
       
-      names.each do |name|
-        if !final_array[name]
-          final_array[name] = {}
-        end 
-        if !final_array[name][key]
-          !final_array[name][key] = []
-        end 
-        final_array[name][key].push(inner_key.to_s)
 binding.pry
 end
 
