@@ -5,10 +5,10 @@ require 'pry'
 
 def load_library(path)
 library = YAML.load_file(path)
-final_libary = []
+final_library = {}
 binding.pry
 library.each do |key, value|
-  final_libary.store key => {}
+  final_library.store key => {}
 end 
 binding.pry
 end
