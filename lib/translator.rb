@@ -6,9 +6,8 @@ require 'pry'
 def load_library(path)
 library = YAML.load_file(path)
 final_library = {}
-binding.pry
 library.each do |key, value|
-  final_library.store key => {}
+  final_library[key] = {}
 end 
 binding.pry
 end
