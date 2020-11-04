@@ -4,8 +4,7 @@ require 'pry'
 
 
 def load_library
-  binding.pry
-  library = YAML.load_file('emoticons.yml')
+YAML.load_file('emoticons.yml')
 binding.pry 
 end
 
