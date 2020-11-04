@@ -9,7 +9,7 @@ final_library = {}
 library.each do |key, value|
   final_library[key] = {:english=> value[0], :japanese=> value[1]}
 end 
-binding.pry
+final_library
 end
 
 def get_japanese_emoticon
