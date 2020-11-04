@@ -10,8 +10,7 @@ final_library =  library.each_with_object({}) do |(key, value), final_library|
       inner_hash = {english => array_of_emot[0], japanese=> array_of_emot[1]}
       binding.pry
     end 
-    final_library = key=> inner_hash
-  end 
+-  end 
 end
 
 def get_japanese_emoticon
